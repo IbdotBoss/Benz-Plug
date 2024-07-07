@@ -1,0 +1,3 @@
+C:/Users/uthma/OneDrive/Documents/Assesments/ITP/benz_plug/cmake-build-debug/CMakeFiles/CarSales.dir
+C:/Users/uthma/OneDrive/Documents/Assesments/ITP/benz_plug/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/uthma/OneDrive/Documents/Assesments/ITP/benz_plug/cmake-build-debug/CMakeFiles/rebuild_cache.dir
