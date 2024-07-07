@@ -269,16 +269,18 @@ void buy_car() {
     // Update car stock
     cars[car_index].stock -= quantity;
 
-    // Record sale data
-    Sale sale;
-    strcpy(sale.customer_name, customer_name);
-    sale.customer_age = customer_age;
-    sale.total_price = total_price;
-    sale.discount = with_plug ? DISCOUNT_PERCENTAGE * 100 : 0;
-    sale.num_cars = quantity;
-    strcpy(sale.date, date);
-    strcpy(sale.car_model, cars[car_index].model);  // Store the car model in the sales array
-    sales[num_sales] = sale;  // Store the sale in the sales array
+	// Record sale data
+	Sale sale;
+	strcpy(sale.customer_name, customer_name);
+	sale.customer_age = customer_age;
+	sale.total_price = total_price;
+	sale.discount = with_plug ? DISCOUNT_PERCENTAGE * 100 : 0;
+	sale.num_cars = quantity;
+	strcpy(sale.date, date);
+	strcpy(sale.car_model, cars[car_index].model);  // Store the car model in the sales array
+	sale.rating = 0;	// Initialize the sale.rating to a default value, e.g., 0
+	sales[num_sales] = sale;	// Store the sale in the sales array
+
 
     printf("Purchase successful!\n");
     printf("You bought %d %d Mercedes Benz %s AMG for %d GBP.\n", quantity, cars[car_index].year, cars[car_index].model, total_price);
